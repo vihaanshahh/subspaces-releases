@@ -17,27 +17,33 @@ Release: [v0.1.0-beta](https://github.com/vihaanshahh/subspaces-releases/release
 
 Requires Node.js 22.
 
-Unpack the archive for your platform, change into the extracted folder, and start the app:
+Unpack the archive for your platform, change into `subspaces-si`, and start the app:
 
 ```sh
 tar -xzf subspaces-si-0.1.0-linux-x64.tar.gz
-cd subspaces-si-0.1.0-linux-x64
+cd subspaces-si
 ./start
 ```
 
-Use the `darwin-arm64` or `darwin-x64` archive name on macOS. The extracted folder name matches the archive name without `.tar.gz`.
+Use the `darwin-arm64` or `darwin-x64` archive name on macOS. Every archive unpacks to a folder named `subspaces-si`.
 
 Optional: copy `.env.example` to `.env` and fill in model or ad keys.
 
 If macOS Gatekeeper blocks the app:
 
 ```sh
-xattr -dr com.apple.quarantine subspaces-si-0.1.0-darwin-arm64
+xattr -dr com.apple.quarantine subspaces-si
 ```
 
-Use the folder you extracted.
-
 ## Verify checksums
+
+`SHA256SUMS` for v0.1.0-beta:
+
+```
+861c1c9ad02d45c9bf683ed580643174ce797e9d12c981c124a2667c0b59e6d7  subspaces-si-0.1.0-darwin-arm64.tar.gz
+59781b3233ecc9885ce481757ac89861069431593c88b2447c30a616d09dec3f  subspaces-si-0.1.0-darwin-x64.tar.gz
+b71b0f8d03c8838973d9947c6740edea2506e72e908e93e84d441ad9dbc1200d  subspaces-si-0.1.0-linux-x64.tar.gz
+```
 
 Download `SHA256SUMS` next to the archive, then check the file you downloaded.
 
